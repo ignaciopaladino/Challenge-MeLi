@@ -1,0 +1,24 @@
+.breadcrumb-list {
+    display: flex;
+    margin-top: 16px;
+    .breadcrumb-item.last {
+        a{
+            font-weight: bold;
+        }
+    }
+    .breadcrumb-item {
+        display: flex;
+        color: #999999;
+        a.breadcrumb-link{
+            text-decoration: none;
+            color: #999999;
+            font-size: 14px;
+            &:hover{
+                text-decoration: underline;
+            }            
+        }
+        .breadcrumb-chevron {
+            margin: 0px 10px;
+        }
+    }
+}

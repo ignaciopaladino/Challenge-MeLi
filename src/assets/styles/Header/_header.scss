@@ -1,0 +1,44 @@
+header{
+    background-color: $yellow;
+    padding: 10px 0px;
+
+    .header-container {
+        display: block;
+        padding: 0 10px;
+        margin: 0 auto;
+        max-width: 1200px;
+        display: flex;
+
+        .searchbar-container {
+            width: 100%;
+            margin-left: 20px;
+
+            input[type=text]{
+                ::placeholder {
+                    color: #999999;
+                }
+                :focus-visible{
+                    outline: none;
+                }
+                background-color: #ffffff;
+                color: #333333;
+                border: none;
+                width: calc(96% - 20px);
+                border-radius: 4px 0px 0px 4px;
+                padding: 8px 10px;
+                font-size: 18px;  
+                outline: none;              
+            }
+            button.searchbar-btnSubmit {
+                border: none;
+                background-color: #eeeeee;
+                text-align: center;
+                padding: 8px 10px; 
+                border-radius: 0px 4px 4px 0px;
+                width: 4%;
+                cursor: pointer;
+                vertical-align: bottom;
+            }
+        }
+    }
+}
